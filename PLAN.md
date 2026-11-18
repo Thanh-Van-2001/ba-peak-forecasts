@@ -187,3 +187,19 @@ If H1 holds and H2 does not, the public "operators under-forecast peaks" claim
 is mostly selection and scorecards should condition on the forecast. If both
 hold, operators do under-forecast peaks, and the size of bias_F is the number to
 report. Either result is reported.
+
+## Amendment 1 (18 November 2026, after the full results and an internal review)
+
+Bug fixes. None changed the outcome of a hypothesis.
+- Block bootstrap: start positions now include the last possible block (was off by one).
+- Hot-day runs are counted on the full daily temperature series. Before, they were counted on days with valid load, so a dropped day restarted a run.
+- Regional robustness: a region now votes by the majority sign of its BAs, as this plan says. Before, it used the regional median.
+
+Exploratory analyses added after the results, reported as exploratory:
+- Share of BA-days with p_d < 0 over all days, to separate hour selection from day selection.
+- Bias relative to each BA's overall bias (bias_F - bias_all, bias_A - bias_all), with sign tests.
+- Second-highest hourly forecast and demand instead of daily maxima, so a single-hour forecast spike cannot select a day.
+- Shuffle benchmark within calendar month.
+- Mincer-Zarnowitz slope with year fixed effects, Huber robust regression.
+- Day after a hot day against other days; first against third-or-later day within spells of at least three hot days; first and third-or-later days against other summer days.
+- Pooled effects without the BAs whose overall bias exceeds 10% in magnitude (FPC, PSEI).

@@ -15,15 +15,19 @@ DOIS = {
     "murphy1993good": "10.1175/1520-0434(1993)008<0281:wiagfa>2.0.co;2",
     "hong2016probabilistic": "10.1016/j.ijforecast.2015.11.011",
     "auffhammer2017climate": "10.1073/pnas.1613193114",
-    "xie2018temperature": "10.1109/TSG.2016.2597178",
     "sobhani2020temperature": "10.1016/j.ijforecast.2019.04.022",
     "ruggles2020eia": "10.1038/s41597-020-0483-x",
     "menne2012ghcn": "10.1175/JTECH-D-11-00103.1",
     "dersimonian1986meta": "10.1016/0197-2456(86)90046-2",
     "kunsch1989jackknife": "10.1214/aos/1176347265",
     "newey1987simple": "10.2307/1913610",
+    "patton2007optimal": "10.1016/j.jeconom.2006.07.018",
+    "gneiting2011comparing": "10.1198/jbes.2010.08110",
+    "hyndman2010density": "10.1109/TPWRS.2009.2036017",
+    "hong2015weather": "10.1016/j.ijforecast.2014.07.001",
+    "douglas1998impacts": "10.1109/59.736298",
 }
-TITLE_FIX = {}
+TITLE_FIX = {"United States": "{U}nited {S}tates", "An Essay": "{A}n Essay"}
 
 
 def get(url, tries=5):
@@ -34,6 +38,10 @@ def get(url, tries=5):
             if e.code != 429 or t == tries - 1:
                 raise
             time.sleep(20 * (t + 1))
+        except urllib.error.URLError:
+            if t == tries - 1:
+                raise
+            time.sleep(5 * (t + 1))
 
 
 out = []
@@ -42,6 +50,7 @@ for key, doi in DOIS.items():
     bib = re.sub(r"^@(\w+)\{[^,]+,", lambda m: "@" + m.group(1) + "{" + key + ",", bib.strip(), count=1)
     bib = re.sub(r"\s*url=\{[^}]*\},", "", bib)
     bib = re.sub(r",\s*month=\w+", "", bib)
+    bib = bib.replace("&amp;", r"\&")
     for a, b in TITLE_FIX.items():
         bib = bib.replace(a, b)
     t = re.search(r"title=\{(.*?)\},", bib)

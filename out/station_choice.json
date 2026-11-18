@@ -1,0 +1,555 @@
+{
+ "Albany": {
+  "station": "USW00014735",
+  "name": "ALBANY INTL AP",
+  "km": 11.5,
+  "days": 3926,
+  "usw": true
+ },
+ "Albuquerque": {
+  "station": "USW00023050",
+  "name": "ALBUQUERQUE INTL AP",
+  "km": 5.3,
+  "days": 3926,
+  "usw": true
+ },
+ "Asheville": {
+  "station": "USW00013872",
+  "name": "ASHEVILLE",
+  "km": 0.8,
+  "days": 3926,
+  "usw": true
+ },
+ "Atlanta": {
+  "station": "USW00003888",
+  "name": "ATLANTA FULTON CO AP",
+  "km": 12.8,
+  "days": 3905,
+  "usw": true
+ },
+ "Austin": {
+  "station": "USW00013958",
+  "name": "AUSTIN-CAMP MABRY",
+  "km": 6.0,
+  "days": 3926,
+  "usw": true
+ },
+ "Bellevue": {
+  "station": "USW00094290",
+  "name": "SEATTLE SAND PT WFO",
+  "km": 9.5,
+  "days": 3892,
+  "usw": true
+ },
+ "Billings": {
+  "station": "USW00024033",
+  "name": "BILLINGS INTL AP",
+  "km": 4.7,
+  "days": 3926,
+  "usw": true
+ },
+ "Birmingham": {
+  "station": "USW00013876",
+  "name": "BIRMINGHAM AP",
+  "km": 7.2,
+  "days": 3925,
+  "usw": true
+ },
+ "Boise": {
+  "station": "USW00024131",
+  "name": "BOISE AIR TERMINAL",
+  "km": 6.7,
+  "days": 3926,
+  "usw": true
+ },
+ "Boston": {
+  "station": "USW00014739",
+  "name": "BOSTON",
+  "km": 4.1,
+  "days": 3926,
+  "usw": true
+ },
+ "Buffalo": {
+  "station": "USW00014733",
+  "name": "BUFFALO",
+  "km": 13.4,
+  "days": 3926,
+  "usw": true
+ },
+ "Charleston": {
+  "station": "USW00013782",
+  "name": "DWTN CHARLESTON",
+  "km": 0.8,
+  "days": 3926,
+  "usw": true
+ },
+ "Charlotte": {
+  "station": "USW00013881",
+  "name": "CHARLOTTE DOUGLAS AP",
+  "km": 10.4,
+  "days": 3926,
+  "usw": true
+ },
+ "Chattanooga": {
+  "station": "USW00013882",
+  "name": "CHATTANOOGA AP",
+  "km": 10.2,
+  "days": 3926,
+  "usw": true
+ },
+ "Cheyenne": {
+  "station": "USW00024018",
+  "name": "CHEYENNE",
+  "km": 1.8,
+  "days": 3926,
+  "usw": true
+ },
+ "Chicago": {
+  "station": "USW00014819",
+  "name": "CHICAGO MIDWAY AP",
+  "km": 14.9,
+  "days": 3925,
+  "usw": true
+ },
+ "Columbia SC": {
+  "station": "USW00053867",
+  "name": "COLUMBIA OWENS DWTN AP",
+  "km": 4.6,
+  "days": 3899,
+  "usw": true
+ },
+ "Columbus OH": {
+  "station": "USW00014821",
+  "name": "JOHN GLENN INTL AP",
+  "km": 11.0,
+  "days": 3926,
+  "usw": true
+ },
+ "Dallas": {
+  "station": "USW00013960",
+  "name": "DALLAS FAA AP",
+  "km": 7.3,
+  "days": 3926,
+  "usw": true
+ },
+ "Denver": {
+  "station": "USW00023062",
+  "name": "DENVER-STAPLETON",
+  "km": 10.6,
+  "days": 3913,
+  "usw": true
+ },
+ "Detroit": {
+  "station": "USW00014822",
+  "name": "DETROIT CITY AP",
+  "km": 9.2,
+  "days": 3911,
+  "usw": true
+ },
+ "El Paso": {
+  "station": "USW00023044",
+  "name": "EL PASO INTL AP",
+  "km": 12.1,
+  "days": 3926,
+  "usw": true
+ },
+ "Fort Myers": {
+  "station": "USW00012835",
+  "name": "FT MYERS PAGE FLD AP",
+  "km": 6.2,
+  "days": 3896,
+  "usw": true
+ },
+ "Fresno": {
+  "station": "USW00093193",
+  "name": "FRESNO YOSEMITE INTL",
+  "km": 7.6,
+  "days": 3926,
+  "usw": true
+ },
+ "Great Falls": {
+  "station": "USW00024143",
+  "name": "GREAT FALLS AP",
+  "km": 6.9,
+  "days": 3926,
+  "usw": true
+ },
+ "Greensboro": {
+  "station": "USW00013723",
+  "name": "GREENSBORO AP",
+  "km": 14.1,
+  "days": 3926,
+  "usw": true
+ },
+ "Greenville SC": {
+  "station": "USW00013886",
+  "name": "GREENVILLE DWTN AP",
+  "km": 4.6,
+  "days": 3904,
+  "usw": true
+ },
+ "Hartford": {
+  "station": "USW00014752",
+  "name": "HARTFORD BRAINARD FLD",
+  "km": 3.6,
+  "days": 3905,
+  "usw": true
+ },
+ "Houston": {
+  "station": "USW00012918",
+  "name": "HOUSTON WILLIAM P HOBBY AP",
+  "km": 15.3,
+  "days": 3925,
+  "usw": true
+ },
+ "Indianapolis": {
+  "station": "USW00093819",
+  "name": "INDIANAPOLIS",
+  "km": 12.4,
+  "days": 3926,
+  "usw": true
+ },
+ "Islip": {
+  "station": "USW00004781",
+  "name": "ISLIP-LI MACARTHUR AP",
+  "km": 11.5,
+  "days": 3926,
+  "usw": true
+ },
+ "Jacksonville": {
+  "station": "USW00093837",
+  "name": "JACKSONVILLE NAS",
+  "km": 10.8,
+  "days": 3881,
+  "usw": true
+ },
+ "Kansas City": {
+  "station": "USW00013988",
+  "name": "KANSAS CITY DWTN AP",
+  "km": 3.2,
+  "days": 3917,
+  "usw": true
+ },
+ "Knoxville": {
+  "station": "USW00013891",
+  "name": "KNOXVILLE AP",
+  "km": 16.9,
+  "days": 3926,
+  "usw": true
+ },
+ "Las Vegas": {
+  "station": "USW00053123",
+  "name": "LAS VEGAS AIR TERMINAL",
+  "km": 6.7,
+  "days": 3918,
+  "usw": true
+ },
+ "Lexington": {
+  "station": "USW00093820",
+  "name": "LEXINGTON BLUEGRASS AP",
+  "km": 9.8,
+  "days": 3926,
+  "usw": true
+ },
+ "Los Angeles": {
+  "station": "USW00093134",
+  "name": "LOS ANGELES DOWNTOWN/USC",
+  "km": 5.5,
+  "days": 3926,
+  "usw": true
+ },
+ "Louisville": {
+  "station": "USW00093821",
+  "name": "LOUISVILLE INTL AP",
+  "km": 8.5,
+  "days": 3926,
+  "usw": true
+ },
+ "Medford": {
+  "station": "USW00024225",
+  "name": "MEDFORD INTL AP",
+  "km": 5.0,
+  "days": 3921,
+  "usw": true
+ },
+ "Memphis": {
+  "station": "USW00013893",
+  "name": "MEMPHIS INTL AP",
+  "km": 11.9,
+  "days": 3926,
+  "usw": true
+ },
+ "Miami": {
+  "station": "USW00012839",
+  "name": "MIAMI INTL AP",
+  "km": 13.1,
+  "days": 3925,
+  "usw": true
+ },
+ "Milwaukee": {
+  "station": "USW00014839",
+  "name": "MILWAUKEE MITCHELL AP",
+  "km": 9.5,
+  "days": 3926,
+  "usw": true
+ },
+ "Minneapolis": {
+  "station": "USW00014922",
+  "name": "MINNEAPOLIS-ST PAUL INTL AP",
+  "km": 11.0,
+  "days": 3926,
+  "usw": true
+ },
+ "Missoula": {
+  "station": "USW00024153",
+  "name": "MISSOULA INTL AP",
+  "km": 9.1,
+  "days": 3926,
+  "usw": true
+ },
+ "Mobile": {
+  "station": "USW00013838",
+  "name": "MOBILE DWTN AP",
+  "km": 8.7,
+  "days": 3917,
+  "usw": true
+ },
+ "Moses Lake": {
+  "station": "USW00024110",
+  "name": "MOSES LAKE GRANT CO AP",
+  "km": 7.5,
+  "days": 3917,
+  "usw": true
+ },
+ "Myrtle Beach": {
+  "station": "USW00093718",
+  "name": "N MYRTLE BEACH",
+  "km": 21.0,
+  "days": 3926,
+  "usw": true
+ },
+ "Nashville": {
+  "station": "USW00013897",
+  "name": "NASHVILLE INTL AP",
+  "km": 9.9,
+  "days": 3926,
+  "usw": true
+ },
+ "New Orleans": {
+  "station": "USW00053917",
+  "name": "NEW ORLEANS LAKEFRONT AP",
+  "km": 11.7,
+  "days": 3873,
+  "usw": true
+ },
+ "New York City": {
+  "station": "USW00094728",
+  "name": "NY CITY CNTRL PARK",
+  "km": 8.4,
+  "days": 3926,
+  "usw": true
+ },
+ "Newark": {
+  "station": "USW00014734",
+  "name": "NEWARK LIBERTY INTL AP",
+  "km": 6.4,
+  "days": 3926,
+  "usw": true
+ },
+ "Oklahoma City": {
+  "station": "USW00013967",
+  "name": "OKLAHOMA CY WILL ROGERS WORLD",
+  "km": 11.6,
+  "days": 3926,
+  "usw": true
+ },
+ "Omaha": {
+  "station": "USW00014942",
+  "name": "OMAHA EPPLEY AIRFIELD",
+  "km": 6.2,
+  "days": 3926,
+  "usw": true
+ },
+ "Orlando": {
+  "station": "USW00012841",
+  "name": "ORLANDO EXECUTIVE AP",
+  "km": 4.4,
+  "days": 3926,
+  "usw": true
+ },
+ "Philadelphia": {
+  "station": "USW00013739",
+  "name": "PHILA INTL AP",
+  "km": 9.8,
+  "days": 3926,
+  "usw": true
+ },
+ "Phoenix": {
+  "station": "USW00023183",
+  "name": "PHOENIX AP",
+  "km": 6.6,
+  "days": 3926,
+  "usw": true
+ },
+ "Portland OR": {
+  "station": "USW00024229",
+  "name": "PORTLAND INTL AP",
+  "km": 10.1,
+  "days": 3926,
+  "usw": true
+ },
+ "Providence": {
+  "station": "USW00014765",
+  "name": "PROVIDENCE",
+  "km": 11.0,
+  "days": 3926,
+  "usw": true
+ },
+ "Raleigh": {
+  "station": "USW00013722",
+  "name": "RALEIGH AP",
+  "km": 17.9,
+  "days": 3926,
+  "usw": true
+ },
+ "Riverside": {
+  "station": "USW00003171",
+  "name": "RIVERSIDE MUNI AP",
+  "km": 3.3,
+  "days": 3926,
+  "usw": true
+ },
+ "Sacramento": {
+  "station": "USW00023232",
+  "name": "SACRAMENTO AP ASOS",
+  "km": 8.2,
+  "days": 3924,
+  "usw": true
+ },
+ "Salt Lake City": {
+  "station": "USW00024127",
+  "name": "SALT LAKE CITY INTL AP",
+  "km": 6.4,
+  "days": 3921,
+  "usw": true
+ },
+ "San Antonio": {
+  "station": "USW00012970",
+  "name": "SAN ANTONIO STINSON MUNI AP",
+  "km": 9.2,
+  "days": 3920,
+  "usw": true
+ },
+ "San Diego": {
+  "station": "USW00023188",
+  "name": "SAN DIEGO INTL AP",
+  "km": 2.6,
+  "days": 3924,
+  "usw": true
+ },
+ "San Jose": {
+  "station": "USW00023293",
+  "name": "SAN JOSE",
+  "km": 3.7,
+  "days": 3917,
+  "usw": true
+ },
+ "Savannah": {
+  "station": "USW00003822",
+  "name": "SAVANNAH INTL AP",
+  "km": 12.0,
+  "days": 3926,
+  "usw": true
+ },
+ "Seattle": {
+  "station": "USW00024234",
+  "name": "SEATTLE BOEING FLD",
+  "km": 7.3,
+  "days": 3886,
+  "usw": true
+ },
+ "Spokane": {
+  "station": "USW00024157",
+  "name": "SPOKANE INTL AP",
+  "km": 8.5,
+  "days": 3926,
+  "usw": true
+ },
+ "Springfield MO": {
+  "station": "USW00093981",
+  "name": "SPRINGFIELD WBO",
+  "km": 1.4,
+  "days": 3926,
+  "usw": true
+ },
+ "St Louis": {
+  "station": "USW00003960",
+  "name": "CAHOKIA ST LOUIS DWTN AP",
+  "km": 8.6,
+  "days": 3904,
+  "usw": true
+ },
+ "St Petersburg": {
+  "station": "USW00092806",
+  "name": "ST PETERSBURG ALBERT WHITTED A",
+  "km": 1.4,
+  "days": 3885,
+  "usw": true
+ },
+ "Tacoma": {
+  "station": "USW00094274",
+  "name": "TACOMA NARROWS AP",
+  "km": 10.5,
+  "days": 3894,
+  "usw": true
+ },
+ "Tampa": {
+  "station": "USW00012842",
+  "name": "TAMPA INTL AP",
+  "km": 8.0,
+  "days": 3924,
+  "usw": true
+ },
+ "Tucson": {
+  "station": "USW00023160",
+  "name": "TUCSON INTL AP",
+  "km": 9.9,
+  "days": 3926,
+  "usw": true
+ },
+ "Tulsa": {
+  "station": "USW00013968",
+  "name": "TULSA INTL AP",
+  "km": 11.4,
+  "days": 3926,
+  "usw": true
+ },
+ "Washington DC": {
+  "station": "USW00013743",
+  "name": "WASHINGTON REAGAN NATL AP",
+  "km": 7.0,
+  "days": 3926,
+  "usw": true
+ },
+ "West Palm Beach": {
+  "station": "USW00012844",
+  "name": "W PALM BEACH INTL AP",
+  "km": 6.2,
+  "days": 3903,
+  "usw": true
+ },
+ "Wichita": {
+  "station": "USW00003928",
+  "name": "WICHITA",
+  "km": 9.9,
+  "days": 3926,
+  "usw": true
+ },
+ "Yakima": {
+  "station": "USW00024243",
+  "name": "YAKIMA AP",
+  "km": 4.4,
+  "days": 3916,
+  "usw": true
+ }
+}

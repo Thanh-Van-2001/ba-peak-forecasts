@@ -203,3 +203,39 @@ Exploratory analyses added after the results, reported as exploratory:
 - Mincer-Zarnowitz slope with year fixed effects, Huber robust regression.
 - Day after a hot day against other days; first against third-or-later day within spells of at least three hot days; first and third-or-later days against other summer days.
 - Pooled effects without the BAs whose overall bias exceeds 10% in magnitude (FPC, PSEI).
+
+## Amendment 2 (19 November 2026, exploratory, after independent review)
+
+Written before any of the analyses below was run. An independent automated review of the
+submitted paper (AI-Scientist-v2 reviewer) raised: the "no under-forecast" conclusion rests on
+the non-rejection of H2; BAs are spatially dependent; two BAs with level gaps (FPC, PSEI) stay in
+the primary sample; the statistics are medians while calibration is usually stated for means;
+the shuffle benchmark assumes exchangeable errors; hot days are selected by observed
+temperature. The analyses below are exploratory and are reported as such. They do not change the
+hypotheses, samples, tests or outcomes above, and they do not change any number produced by
+code/peaks.py. They are computed by code/amendment2.py from out/days.parquet, out/ba_table.csv
+and the weather files, with seed 20261119, and written to out/amendment2.json.
+
+- Bounds for H2 (and the same for bias_A and the H3 difference): an exact (Clopper-Pearson) 95%
+  interval for the share of BAs with a negative statistic; a two-stage bootstrap that resamples
+  the EIA regions with replacement and then takes one moving-block bootstrap replicate (7-day
+  blocks, set membership fixed, as in the pre-specified standard errors) of each sampled BA's
+  statistic, 2,000 replicates, giving percentile 95% intervals for the median over BAs and for
+  the share of BAs with a negative statistic. The same bootstrap resampling BAs instead of
+  regions is also reported.
+- Number of BAs whose bias_F is significantly below or above zero (95% normal interval from the
+  pre-specified block-bootstrap standard error; no multiplicity adjustment; descriptive).
+- Regional variant of H3: each EIA region votes with the majority sign of its BAs' H3
+  differences, ties dropped, one-sided sign test. The same for the first-hot-day-minus-other-days
+  difference of Amendment 1.
+- Sign tests for H1, H2 and H3 without the two BAs whose overall bias exceeds 10% in magnitude.
+- Mean calibration: per BA, the mean of 100 x (F*_d - D*_d) / F*_d over actual-top and over
+  forecast-top days, with the H1 and H2 sign tests. Under E[D | F] = F the forecast-top mean is
+  zero, because the days are chosen by F.
+- Benchmark with level-dependent errors: the shuffle of D*_d / F*_d is repeated within each
+  BA-year and quintile of F*_d in that year (200 shuffles), so the spread of errors may depend on
+  the forecast level; count of BAs whose bias_A is below this benchmark.
+
+Hot days stay defined by observed temperature (no archive of temperature forecasts is used). The
+paper states that the heat results describe forecast error given realised heat, not a property
+that can be identified a day ahead.

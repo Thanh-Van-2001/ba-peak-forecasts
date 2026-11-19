@@ -26,8 +26,13 @@ DOIS = {
     "hyndman2010density": "10.1109/TPWRS.2009.2036017",
     "hong2015weather": "10.1016/j.ijforecast.2014.07.001",
     "douglas1998impacts": "10.1109/59.736298",
+    "kazmi2022tso": "10.1016/j.apenergy.2022.119565",
+    "murphy1987framework": "10.1175/1520-0493(1987)115<1330:AGFFFV>2.0.CO;2",
+    "taggart2021point": "10.1002/qj.4206",
+    "lu2026heat": "10.1038/s41467-026-77014-0",
 }
-TITLE_FIX = {"United States": "{U}nited {S}tates", "An Essay": "{A}n Essay"}
+TITLE_FIX = {"United States": "{U}nited {S}tates", "An Essay": "{A}n Essay", "are TSO": "are {TSO}",
+             "on Bayesian": "on {B}ayesian"}
 
 
 def get(url, tries=5):
@@ -51,6 +56,9 @@ for key, doi in DOIS.items():
     bib = re.sub(r"\s*url=\{[^}]*\},", "", bib)
     bib = re.sub(r",\s*month=\w+", "", bib)
     bib = bib.replace("&amp;", r"\&")
+    bib = re.sub(r"pages=\{(\w+)–(\w+)\}", r"pages={\1--\2}", bib)  # Crossref en dash -> range, so IEEEtran prints pp.
+    if key == "newey1987simple":  # Crossref has the first page only
+        bib = bib.replace("pages={703}", "pages={703--708}")
     for a, b in TITLE_FIX.items():
         bib = bib.replace(a, b)
     t = re.search(r"title=\{(.*?)\},", bib)
